@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- "ng app" special command or directive, tells html that this whole document operates using myApp module(in controllers.js) -->
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF=8">
+	<title>Angular Demo</title>
+	<script src="lib/angular/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="lib/angular/angular-route.min.js"></script>
+	<script src="lib/angular/angular-animate.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<!-- <input type="text" ng-model="name"> -->
+<!-- 	 unlike other jquery or java script, ng-model directly ties the input text with "name", so no need of id or name
+	{{}} expressions -->
+	<!-- <h2>Welcome {{name}}</h2> -->
+
+	<!-- MyContoller is defined in the controllerjs -->
+
+	<!-- <div class="main" ng-controller= "MyController"> -->
+
+<!-- 	<h1>{{artist.name}}</h1>
+	<p>{{author.title + ','+ author.company}}</p> -->
+	
+	<!-- instead of using a single controller now each view will use different controller -->
+	<div class="main" ng-view>
+	</div>
+
+</body>
+
+</html>
